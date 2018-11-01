@@ -1,0 +1,30 @@
+# Copyright (c) 2018, NVIDIA CORPORATION.
+
+# Usage:
+#   conda build -c defaults -c conda-forge .
+package:
+  name: nvdriver
+  version: 396.44
+
+source:
+  # git_url: ../..
+  path: ../..
+
+build:
+  number: 0
+  string: cuda9.2
+
+requirements:
+  # use channel:
+  #   - defaults
+  #   - conda-forge
+  build:
+    - python x.x
+  run:
+    - python x.x
+
+about:
+  home: http://rapids.ai/
+  license: other
+  #license_file:
+  summary: nvdriver library
